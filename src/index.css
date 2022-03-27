@@ -1,13 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dashIcon {
+    @apply flex justify-center cursor-pointer
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashText {
+    @apply font-semibold col-span-2 ml-1.5 hidden lg:inline-block cursor-pointer
+}
+
+.button {
+    @apply px-5 md:px-7 py-2 bg-sky-600 text-white rounded-full font-semibold
 }
